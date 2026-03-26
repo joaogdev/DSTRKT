@@ -1,6 +1,8 @@
 import { prisma } from '@/lib/prisma';
 import { ProductsPageClient } from '@/components/products/ProductsPageClient';
 
+export const dynamic = 'force-dynamic';
+
 type ProductsPageProps = {
   searchParams?: {
     category?: string;

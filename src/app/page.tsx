@@ -4,6 +4,8 @@ import { prisma } from '@/lib/prisma';
 import { ArrowRight, Star } from 'lucide-react';
 import { ProductImage } from '@/components/ui/ProductImage';
 
+export const dynamic = 'force-dynamic';
+
 const CATEGORY_IMAGES: Record<string, string> = {
   'new-in': 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?w=800&q=80',
   'tracksuits': 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&q=80',

@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/prisma';
 import { ProductDetailClient } from '@/components/products/ProductDetailClient';
 
+export const dynamic = 'force-dynamic';
+
 type ProductDetailPageProps = {
   params: {
     id: string;
