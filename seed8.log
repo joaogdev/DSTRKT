@@ -1,0 +1,48 @@
+﻿node : file:///C:/Users/joao
+g/Documents/Hackaton/prisma/
+seed.mjs:2
+At line:1 char:1
++ node prisma/seed.mjs 2>&1 
+| Out-File -Encoding utf8 
+seed8.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (file:  
+  ///C:/User...isma/seed.   
+ mjs:2:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+import { hash } from 
+'bcryptjs';
+         ^^^^
+SyntaxError: Named export 
+'hash' not found. The 
+requested module 'bcryptjs' 
+is a CommonJS module, which 
+may not support all 
+module.exports as named 
+exports.
+CommonJS modules can always 
+be imported via the default 
+export, for example using:
+
+import pkg from 'bcryptjs';
+const { hash } = pkg;
+
+    at #asyncInstantiate (no
+de:internal/modules/esm/modu
+le_job:319:21)
+    at async ModuleJob.run (
+node:internal/modules/esm/mo
+dule_job:422:5)
+    at async onImport.traceP
+romise.__proto__ (node:inter
+nal/modules/esm/loader:661:2
+6)
+    at async asyncRunEntryPo
+intWithESMLoader (node:inter
+nal/modules/run_main:101:5)
+
+Node.js v24.14.0
