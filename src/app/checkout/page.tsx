@@ -141,10 +141,10 @@ export default function CheckoutPage() {
                   </div>
                   <div>
                     <label className="block text-[11px] font-medium text-zinc-500 mb-1.5 uppercase tracking-wider">State</label>
-                    <select className="input text-[13px]" value={address.state} onChange={(e) => setAddress({ ...address, state: e.target.value })}>
-                      <option value="">Select</option>
+                    <select className="input text-[13px] bg-black" value={address.state} onChange={(e) => setAddress({ ...address, state: e.target.value })}>
+                      <option className="bg-black text-white" value="">Select</option>
                       {['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map((s) => (
-                        <option key={s} value={s}>{s}</option>
+                        <option className="bg-black text-white" key={s} value={s}>{s}</option>
                       ))}
                     </select>
                   </div>

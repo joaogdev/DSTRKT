@@ -2,7 +2,7 @@
 
 import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
-import { ShoppingCart, Menu, X, User, LogOut, Package, ChevronDown, Search } from 'lucide-react';
+import { ShoppingCart, Menu, X, User, LogOut, Package, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useCartStore } from '@/store/cart';
 
@@ -15,6 +15,7 @@ const NAV_LINKS = [
   { label: 'HOME',        href: '/' },
   { label: 'MARKETPLACE', href: '/products' },
   { label: 'ARCHIVE',     href: '/archive' },
+  { label: 'ORDERS',      href: '/orders' },
 ];
 
 export function Navbar() {

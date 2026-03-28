@@ -40,3 +40,6 @@ nul
 
 # environment
 .env*
+
+.vercel
+.env*.local
